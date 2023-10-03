@@ -1,0 +1,934 @@
+@import url('https://fonts.googleapis.com/css2?family=Mooli&family=Roboto+Condensed:wght@400;700&display=swap');
+/*! minireset.css v0.0.7 | MIT License | github.com/jgthms/minireset.css */
+html,
+body,
+p,
+ol,
+ul,
+li,
+dl,
+dt,
+dd,
+blockquote,
+figure,
+fieldset,
+legend,
+textarea,
+pre,
+iframe,
+hr,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 100%;
+  font-weight: normal;
+}
+
+ul {
+  list-style: none;
+}
+
+button,
+input,
+select {
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+img,
+video {
+  height: auto;
+  max-width: 100%;
+}
+
+iframe {
+  border: 0;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+td,
+th {
+  padding: 0;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Mooli', sans-serif;
+  }
+
+  .container {
+    min-width: 18.125rem;
+  }
+
+  header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: wrap column;
+  padding: 0.5rem 0rem;
+  }
+
+  #header-img {
+    width: 11rem;
+    height: 1.4rem;
+    margin-bottom: 0.3rem;
+    margin-left: -1.3rem;
+  }
+
+  #nav-bar {
+    display: flex;
+    justify-content: flex-end;
+    align-content: space-between;
+    font-size: 0.6rem;
+    list-style-type: none;
+    padding-right: 0.6rem;
+  }
+
+  .nav-link {
+    text-align: center;
+    margin-left: 0.3rem;
+    letter-spacing: 0.01rem;
+    line-height: 0.9rem;
+  }
+
+  a {
+    text-decoration: none;
+    color: black;
+  }
+
+  #video {
+    min-width: 100%;
+    min-height: 10rem;
+  }
+
+  h2 {
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 600;
+    font-family: 'Roboto Condensed', sans-serif;
+    letter-spacing: 0.02rem;
+    padding: 0.5rem 0rem;
+  }
+
+  #form {
+    display: grid;
+    grid-template-rows: auto auto;
+    place-content: center;
+  }
+
+  #email {
+    padding: 0.1rem 2rem 0.2rem 0.1rem;
+    margin: 0.5rem 6.3rem 0.2rem;
+    font-size: 0.6rem;
+  }
+
+  #submit {
+    font-size: 0.6rem;
+    font-weight: 600;
+    font-family: 'Roboto Condensed', sans-serif;
+    margin: 0.1rem 8.5rem 0rem;
+    background-color: #f1c40f;
+    border-color: #f1c40f;
+    padding: 0.2rem 0rem 0.1rem;
+    margin-bottom: 2.5rem;
+  }
+
+  article section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: wrap column;
+    padding: 0.4rem 0.8rem;
+    line-height: 0.8rem;
+    text-align: center;
+  }
+
+  .fire img {
+    width: 1.8rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .truck img {
+    width: 3.3rem;
+    margin-bottom: -0.3rem;
+  }
+
+  .battery img {
+    width: 3.8rem;
+    height: 4.5rem;
+    margin-bottom: -1.2rem;
+  }
+
+  h3 {
+    font-size: clamp(1rem, 1px + 3vw, 2rem);
+    font-weight: 600;
+    margin-bottom: 0.3rem;
+  }
+
+  p, span {
+    font-size: clamp(0.6rem, 1px + 2.5vw, 1.3rem);
+  }
+
+
+  #video {
+    background-size: contain;
+    width: auto;
+    height: 14rem;
+    margin: auto;
+    display: flex;
+    margin-bottom: 2rem;
+    margin-top: 2.5rem;
+  }
+
+.buy {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: wrap column;
+  padding: 0rem 0.2rem;
+  gap: 0.5rem;
+}
+
+.box {
+  border: 0.000000001rem solid black;
+  text-align: center;
+  min-width: 10rem;
+  height: 12.5rem;
+}
+
+.name {
+  background-color: #ddd;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 1rem;
+  padding: 1rem 0rem;
+  font-weight: 600;
+  font-size: clamp(0.7rem, 1px + 2.5vw, 1.1rem);
+}
+
+.price {
+  padding: 0.6rem 0rem 1rem;
+  font-weight: 600;
+  font-size: 0.8rem;
+}
+
+.list {
+  font-size: 0.6rem;
+  font-weight: 400;
+  line-height: 1.2rem;
+}
+
+#selection {
+  margin-top: 0.8rem;
+  font-size: 0.6rem;
+  padding: 0.3rem;
+  height: 1.5rem;
+  background-color: #f1c40f;
+  border-color: #f1c40f;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  flex-flow: wrap column;
+  font-size: 0.8rem;
+  background-color: #ddd;
+  width: 100%;
+  min-height: 4rem;
+  padding-right: 0.5rem;
+  margin-top: 2rem;
+}
+
+.foot {
+  padding-left: 0.3rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* FOR DEVICES GREATER THAN 400PX */
+
+@media (min-width: 400px) {
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Mooli', sans-serif;
+  }
+
+  header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: wrap column;
+  padding: 1rem 0rem;
+  }
+
+  #header-img {
+    width: 19rem;
+    height: 2rem;
+    margin-bottom: 0.3rem;
+    margin-left: -1.3rem;
+  }
+
+  #nav-bar {
+    display: flex;
+    justify-content: flex-end;
+    align-content: space-between;
+    font-size: 0.9rem;
+    list-style-type: none;
+    padding-right: 0.6rem;
+  }
+
+  .nav-link {
+    text-align: center;
+    margin-left: 0.3rem;
+    letter-spacing: 0.01rem;
+    line-height: 1.4rem;
+  }
+
+  a {
+    text-decoration: none;
+    color: black;
+  }
+
+  #video {
+    min-width: 100%;
+    min-height: 10rem;
+  }
+
+  h2 {
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: 600;
+    font-family: 'Roboto Condensed', sans-serif;
+    letter-spacing: 0.02rem;
+    padding: 0.5rem 0rem;
+  }
+
+  #form {
+    display: grid;
+    grid-template-rows: auto auto;
+    place-content: center;
+  }
+
+  #email {
+    padding: 0.2rem 4rem 0.2rem 0.2rem;
+    margin: 1.5rem 1.8rem 0.2rem;
+    font-size: 0.8rem;
+  }
+
+  #submit {
+    font-size: 0.8rem;
+    font-weight: 600;
+    font-family: 'Roboto Condensed', sans-serif;
+    margin: 0.1rem 8.5rem 0rem;
+    background-color: #f1c40f;
+    border-color: #f1c40f;
+    padding: 0.2rem 1.5rem 0.1rem;
+    margin-bottom: 2.5rem;
+  }
+
+  article section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: wrap column;
+    padding: 0.4rem 0.8rem;
+    line-height: 1.5rem;
+    text-align: center;
+  }
+
+  .fire img {
+    width: 2.5rem;
+    margin-bottom: 0.7rem;
+  }
+
+  .truck img {
+    min-width: 5rem;
+    margin-bottom: -0.3rem;
+    margin-top: 1rem;
+  }
+
+  .battery img {
+    width: 5.5rem;
+    height: 6.5rem;
+    margin-bottom: -1.5rem;
+  }
+
+  h3 {
+    font-size: clamp(1rem, 1px + 3vw, 2rem);
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+  }
+
+  p, span {
+    font-size: clamp(0.6rem, 1px + 2.5vw, 1.3rem);
+  }
+
+
+  #video {
+    background-size: contain;
+    width: 10.6rem;
+    height: 18rem;
+    margin: auto;
+    display: block;
+    margin-bottom: 4.5rem;
+    margin-top: 5rem;
+  }
+
+.buy {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: wrap column;
+  padding: 0rem 0.2rem;
+  gap: 1rem;
+}
+
+.box {
+  border: 0.000000001rem solid black;
+  text-align: center;
+  min-width: 20rem;
+  height: 24rem;
+}
+
+.name {
+  background-color: #ddd;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 1rem;
+  padding: 2rem 0rem;
+  font-weight: 600;
+  font-size: clamp(0.7rem, 1px + 2.5vw, 1.1rem);
+}
+
+.price {
+  padding: 0.9rem 0rem 1.5rem;
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+
+.list {
+  font-size: 0.9rem;
+  font-weight: 400;
+  line-height: 3rem;
+}
+
+#selection {
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+  padding: 0.5rem;
+  height: 2.2rem;
+  background-color: #f1c40f;
+  border-color: #f1c40f;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  flex-flow: wrap column;
+  font-size: 1rem;
+  background-color: #ddd;
+  width: 100%;
+  min-height: 6rem;
+  padding-right: 0.5rem;
+  margin-top: 3rem;
+}
+
+.foot {
+  padding-left: 0.3rem;
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+/* FOR SCREENS GREATER THAN  600PX*/
+
+@media screen and (min-width: 600px) {
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Mooli', sans-serif;
+  }
+
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-flow: wrap row;
+    padding: 1rem 2rem;
+  }
+
+  #header-img {
+    width: 18rem;
+    height: 2.2rem;
+  }
+
+  #nav-bar {
+    font-size: 0.9rem;
+    list-style-type: none;
+  }
+
+  .nav-link {
+    display: inline;
+    margin-left: 0.9rem;
+    letter-spacing: 0.01rem;
+  }
+
+  a {
+    text-decoration: none;
+    color: black;
+  }
+
+  #video {
+    width: 12rem;
+    height: 10rem;
+  }
+
+  h2 {
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: 600;
+    font-family: 'Roboto Condensed', sans-serif;
+    letter-spacing: 0.02rem;
+    padding: 1rem 0rem 1.2rem;
+    margin-bottom: 1rem;
+  }
+
+  #form {
+    display: grid;
+    grid-template-rows: auto auto;
+  }
+
+  #email {
+    padding: 0.3rem 6rem 0.3rem 0.2rem;
+    margin: 0rem 9.4rem 0.2rem;
+    font-size: 0.8rem;
+    font-size: 0.9rem;
+  }
+
+  #submit {
+    padding: 0.2rem 1.5rem;
+    margin: 0.1rem 15rem 6rem;
+    font-size: 0.85rem;
+    font-weight: 600;
+    font-family: 'Roboto Condensed', sans-serif;
+    background-color: #f1c40f;
+  }
+
+  article section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: wrap column;
+    line-height: 1.5rem;
+    text-align: center;
+  }
+
+  .fire, .truck, .battery {
+    display: inline;
+    padding: 1rem;
+  }
+
+  .fire img {
+    width: 2.5rem;
+    margin-bottom: -4rem;
+    margin-left: 1.5rem;
+  }
+
+  .truck img {
+    min-width: 4.8rem;
+    margin-bottom: -6rem;
+    margin-left: -2.5rem;
+  }
+
+  .battery img {
+    width: 5.5rem;
+    height: 6.5rem;
+    margin-left: -2.9rem;
+    margin-bottom: -6rem;
+  }
+
+  h3 {
+    font-size: clamp(1rem, 1px + 3vw, 2rem);
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    padding: 0rem 2rem 0rem 8rem;
+    text-align: left;
+  }
+
+  p, span {
+    font-size: clamp(0.6rem, 1px + 2.5vw, 1.3rem);
+    padding: 0rem 2rem 4rem 8rem;
+    text-align: left;
+  }
+  
+
+  #video {
+    background-size: contain;
+    min-width: 34rem;
+    min-height: 19.1rem;
+    display: block;
+    margin-bottom: 4.5rem;
+    margin-top: 0.5rem;
+  }
+
+.buy {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 0rem 0.4rem;
+  gap: 1rem;
+}
+
+.box {
+  border: 0.000000001rem solid black;
+  min-width: 2rem;
+  text-align: center;
+  height: 23rem;
+  margin-bottom: 1rem;
+}
+
+.name {
+  background-color: #ddd;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 1rem;
+  padding: 1.5rem 0rem;
+  font-weight: 600;
+  font-size: clamp(0.7rem, 1px + 2.5vw, 1.1rem);
+}
+
+.price {
+  padding: 0.8rem 0rem 1.5rem;
+  font-weight: 600;
+  font-size: clamp(1rem, 1px + 3vw, 2rem);
+  text-align: center;
+}
+
+.list {
+  font-size: clamp(0.6rem, 1px + 1.7vw, 1.3rem);
+  font-weight: 400;
+  line-height: 3rem;
+  padding: 0%;
+  margin: 0%;
+  text-align: center;
+}
+
+#selection {
+  background-color: #f1c40f;
+  border-color: #f1c40f;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  flex-flow: wrap column;
+  background-color: #ddd;
+  height: 7rem;
+  margin-top: 3rem;
+  line-height: 0%;
+}
+
+.spanner {
+  padding-bottom: 2rem;
+}
+
+.lastline, .foot {
+  font-size: 1rem;
+  padding-bottom: 0%;
+  padding-top: 0%;
+}
+
+.foot {
+  padding-left: 0.3rem;
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* FOR DEVICES GEATER THAN 1000PX */
+
+@media screen and (min-width: 1000px) {
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Mooli', sans-serif;
+  }
+
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-flow: wrap row;
+    padding: 1rem 2rem;
+  }
+
+  #header-img {
+    width: 18rem;
+    height: 2.2rem;
+  }
+
+  #nav-bar {
+    font-size: 0.9rem;
+    list-style-type: none;
+  }
+
+  .nav-link {
+    display: inline;
+    margin-left: 5rem;
+    letter-spacing: 0.01rem;
+  }
+
+  a {
+    text-decoration: none;
+    color: black;
+  }
+
+  #video {
+    width: 12rem;
+    height: 10rem;
+  }
+
+  h2 {
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: 600;
+    font-family: 'Roboto Condensed', sans-serif;
+    letter-spacing: 0.02rem;
+    padding: 1rem 0rem 1.2rem;
+    margin-bottom: 1rem;
+  }
+
+  #form {
+    display: grid;
+    grid-template-rows: auto auto;
+  }
+
+  #email {
+    padding: 0.3rem 6rem 0.3rem 0.2rem;
+    margin: 0rem 9.4rem 0.2rem;
+    font-size: 0.8rem;
+    font-size: 0.9rem;
+  }
+
+  #submit {
+    padding: 0.2rem 1.5rem;
+    margin: 0.1rem 15rem 6rem;
+    font-size: 0.85rem;
+    font-weight: 600;
+    font-family: 'Roboto Condensed', sans-serif;
+    background-color: #f1c40f;
+  }
+
+  article {
+    padding: 0rem 6rem 0rem 11rem;
+    width: 90%;
+  }
+
+  article section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: wrap column;
+    display: block;
+    line-height: 1.5rem;
+    text-align: center;
+  }
+
+  .fire, .truck, .battery {
+    display: inline;
+    padding: 1rem;
+  }
+
+  .fire img {
+    width: 2.5rem;
+    margin-bottom: -4rem;
+    margin-left: 4rem;
+  }
+
+  .truck img {
+    min-width: 4.8rem;
+    margin-bottom: -6rem;
+    margin-left: -2rem;
+  }
+
+  .battery img {
+    width: 5.5rem;
+    height: 6.5rem;
+    margin-left: -2.2rem;
+    margin-bottom: -7rem;
+  }
+
+  h3 {
+    font-size: clamp(1rem, 1px + 3vw, 2rem);
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    padding: 0rem 4rem 0rem 12rem;
+    text-align: left;
+  }
+
+  p, span {
+    font-size: clamp(0.6rem, 1px + 2.5vw, 1.3rem);
+    padding: 0rem 4rem 4rem 12rem;
+    text-align: left;
+    line-height: 2rem;
+  }
+  
+
+  .fix, .fixed {
+    font-size: clamp(0.6rem, 1px + 2.5vw, 1.3rem);
+    padding: 0rem 4rem 4rem 12rem;
+    text-align: left;
+    line-height: 2rem;
+  }
+
+  #video {
+    background-size: contain;
+    min-width: 34rem;
+    min-height: 19.1rem;
+    display: block;
+    margin-bottom: 4.5rem;
+  }
+
+  .bigpad {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: wrap column;
+    padding: 1rem;
+  }
+
+.buy {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 0rem 0.4rem;
+  gap: clamp(1rem, 1rem + 1vh, 3rem);
+  width: 70%;
+}
+
+.box {
+  border: 0.000000001rem solid black;
+  text-align: center;
+  height: 23rem;
+}
+
+.name {
+  background-color: #ddd;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 1rem;
+  padding: 1.5rem 0rem;
+  font-weight: 600;
+  font-size: clamp(0.7rem, 1px + 2.5vw, 1.1rem);
+}
+
+.price {
+  padding: 0.8rem 0rem 1.5rem;
+  font-weight: 600;
+  font-size: clamp(1rem, 1px + 3vw, 2rem);
+  text-align: center;
+}
+
+.list {
+  font-size: clamp(0.6rem, 1px + 1.35vw, 1.3rem);
+  font-weight: 400;
+  line-height: 3rem;
+  padding: 0%;
+  margin: 0%;
+  text-align: center;
+}
+
+#selection {
+  background-color: #f1c40f;
+  border-color: #f1c40f;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  flex-flow: wrap column;
+  background-color: #ddd;
+  width: 70%;
+  min-height: 7rem;
+  padding-right: 0.5rem;
+  margin-top: 2rem;
+}
+
+.spanner, .lastline {
+  font-size: 1rem;
+}
+
+.spanner {
+  padding-bottom: 0.5rem;
+}
+
+.foot {
+  padding-left: 0.3rem;
+}
+
+}
